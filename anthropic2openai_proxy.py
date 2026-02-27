@@ -279,6 +279,7 @@ async def list_models():
             {"id": "claude-3-5-haiku-20241022", "object": "model"},
             {"id": "claude-3-5-sonnet-20241022", "object": "model"},
             {"id": "claude-3-7-sonnet-20250219", "object": "model"},
+            {"id": "claude-opus-4-6", "object": "model"},
             {"id": "claude-opus-4-5-20251101", "object": "model"},
             {"id": "claude-sonnet-4-20250514", "object": "model"},
             {"id": "claude-sonnet-4-5-20250929", "object": "model"},

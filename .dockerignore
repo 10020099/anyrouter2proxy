@@ -1,0 +1,14 @@
+.git
+.github
+.vscode
+__pycache__/
+*.py[cod]
+*.log
+
+.env
+.env.*
+
+node-proxy/node_modules/
+node-proxy/npm-debug.log
+
+packetcapture/

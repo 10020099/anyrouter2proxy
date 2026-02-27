@@ -268,6 +268,7 @@ async def messages(request: Request):
 async def list_models(request: Request):
     """列出可用模型"""
     models = [
+        {"id": "claude-opus-4-6", "name": "Claude Opus 4.6"},
         {"id": "claude-opus-4-5-20251101", "name": "Claude Opus 4.5"},
         {"id": "claude-sonnet-4-5-20250929", "name": "Claude Sonnet 4.5"},
         {"id": "claude-sonnet-4-20250514", "name": "Claude Sonnet 4"},

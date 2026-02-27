@@ -567,6 +567,25 @@ function handleHealth(req, res) {
 /**
  * 主服务器
  */
+/**
+ * Model list
+ */
+function handleModels(req, res) {
+  res.writeHead(200, { 'Content-Type': 'application/json' });
+  res.end(JSON.stringify({
+    data: [
+      { id: 'claude-opus-4-6', object: 'model' },
+      { id: 'claude-opus-4-5-20251101', object: 'model' },
+      { id: 'claude-sonnet-4-5-20250929', object: 'model' },
+      { id: 'claude-sonnet-4-20250514', object: 'model' },
+      { id: 'claude-haiku-4-5-20251001', object: 'model' },
+      { id: 'claude-3-7-sonnet-20250219', object: 'model' },
+      { id: 'claude-3-5-sonnet-20241022', object: 'model' },
+      { id: 'claude-3-5-haiku-20241022', object: 'model' },
+    ]
+  }));
+}
+
 const server = http.createServer(async (req, res) => {
   // CORS 支持
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -587,6 +606,8 @@ const server = http.createServer(async (req, res) => {
       await handleMessages(req, res, body);
     } else if (url.pathname === '/health' && req.method === 'GET') {
       handleHealth(req, res);
+    } else if (url.pathname === '/v1/models' && req.method === 'GET') {
+      handleModels(req, res);
     } else if (url.pathname === '/' && req.method === 'GET') {
       res.writeHead(200, { 'Content-Type': 'application/json' });
       res.end(JSON.stringify({
