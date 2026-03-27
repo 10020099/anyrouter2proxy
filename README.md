@@ -564,7 +564,7 @@ MIT License
 
 欢迎加入技术交流群，分享你的使用心得和反馈建议：
 
-![技术交流群](https://mypicture-1258720957.cos.ap-nanjing.myqcloud.com/Obsidian/%25E5%25BE%25AE%25E4%25BF%25A1%25E5%259B%25BE%25E7%2589%2587_20260223133201_158_292.jpg)
+![e6ba3a5a-ae85-4826-8e35-82f52a68b845](https://mypicture-1258720957.cos.ap-nanjing.myqcloud.com/e6ba3a5a-ae85-4826-8e35-82f52a68b845.jpg)
 
 ---
 
